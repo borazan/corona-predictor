@@ -17,5 +17,6 @@ while program2_running:
     print('How many days ahead would you like a prediction for?')
     days_ahead = int(input())
     day_x = day_x * (average_delta ** days_ahead)
-    print(f'In {days_ahead} days, there will be an approximate {int(day_x)} cases in your country.')
+    print(f'In {days_ahead} days, there will be an approximate {int(day_x)} cases in your country. With a death rate '
+          f'of %5, that would mean {int((day_x) * .05)} deaths.')
     day_x = daily_cases[2]
